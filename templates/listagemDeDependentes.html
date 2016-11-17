@@ -1,0 +1,13 @@
+<ion-view title="Listagem de Dependentes" cache-view="false">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="listagemDeDependentes-list5" ng-repeat="dependente in dependentes">
+            <ion-item class="item-avatar item-icon-right" id="listagemDeDependentes-list-item3" ng-click="go_listagem(dependente.aluno_id)">
+                <img ng-src="templates/avatar.png">
+                <h2>{{dependente.nome_aluno}}</h2>
+                <p><b>Matrícula:</b> {{dependente.aluno_id}}</p>
+                <i class="icon ion-android-folder-open"></i>
+            </ion-item>
+        </ion-list>
+        <a ui-sref="home" id="listagemDeDependentes-button7" class="button button-balanced  button-block">Voltar</a>
+    </ion-content>
+</ion-view>

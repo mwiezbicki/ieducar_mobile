@@ -1,0 +1,33 @@
+<ion-view title="Frequência" id="page13" cache-view="false">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="frequNcia-list16">
+            <ion-item class="item-avatar" id="detalhesDependente-list-item17">
+                <img ng-src="templates/avatar.png">
+                <h2>{{matricula.aluno_nome}}</h2>
+                <p><b>Escola: </b>{{matricula.escola_nome}}</p>
+                <p><b>Serie: </b>{{matricula.serie_nome}}</p>
+                <p><b>Turma: </b>{{matricula.turma_nome}}</p>
+            </ion-item>
+        </ion-list>
+        
+        <div class="card" style="text-align:center;" ng-show="matricula.frequencia">
+            <div class="item item-text-wrap">
+                <h2>
+                    <b>{{matricula.frequencia}}%</b>
+                </h2>
+            </div>
+        </div>
+        <div class="card" style="text-align:center;" ng-show="matricula.frequencia == null">
+            <div class="item item-text-wrap">
+                <p>
+                    <b>Aluno sem registro de frequência.</b>
+                </p>
+            </div>
+        </div>
+        
+        
+        <div id="frequNcia-markdown22" style="color:#000000;text-align:center;"></div>
+        <div class="spacer" style="width: 300px; height: 37px;"></div>
+        <a ui-sref="detalhesDependente" id="frequNcia-button16" class="button button-balanced  button-block">Voltar</a>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view title="Boletim" id="page14" cache-view="false">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="boletim-list17">
+            <ion-item class="item-avatar" id="boletim-list-item34">
+                <img ng-src="templates/avatar.png">
+                <h2>{{matricula.aluno_nome}}</h2>
+                <p>{{matricula.escola_nome}}</p>
+            </ion-item>
+        </ion-list>
+<!--        <h4 id="boletim-heading6" style="color:#000000;text-align:center;">8º Ano - Turma: 804B - 2º Bimestre</h4>-->
+
+        
+        <ng-pdf  template-url="templates/viewer.html" canvasid="pdf" scale='page-fit'></ng-pdf>
+
+        
+        <a ui-sref="detalhesDependente" id="boletim-button17" class="button button-balanced  button-block">Voltar</a>
+    </ion-content>
+</ion-view>

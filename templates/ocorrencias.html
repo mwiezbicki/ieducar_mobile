@@ -1,0 +1,30 @@
+<ion-view title="Ocorrências" id="page12" cache-view="false">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="ocorrNcias-list15">
+            <ion-item class="item-avatar" id="ocorrNcias-list-item32">
+                <img ng-src="templates/avatar.png">
+                <h2>{{matricula.aluno_nome}}</h2>
+                <p><b>Escola: </b>{{matricula.escola_nome}}</p>
+                <p><b>Serie: </b>{{matricula.serie_nome}}</p>
+                <p><b>Turma: </b>{{matricula.turma_nome}}</p>
+            </ion-item>
+        </ion-list>
+        
+        <div class="card" ng-repeat="ocorrencia in ocorrencias_disciplinares">
+            <div class="item item-text-wrap">
+                <p><b>Tipo: </b>{{ocorrencia.tipo}}</p>
+                <p><b>Data e Hora: </b>{{ocorrencia.data_hora}}</p>
+                <p><b>Descrição: </b>{{ocorrencia.descricao}}</p>
+            </div>
+        </div>
+        
+        <div class="card" ng-show="ocorrencias_disciplinares.length <= 0">
+            <div class="item item-text-wrap">
+                <p><b>Nenhuma ocorrência registrada para o aluno até o momento!</b></p>
+            </div>
+        </div>
+        
+        <div class="spacer" style="width: 300px; height: 29px;"></div>
+        <a ui-sref="detalhesDependente" id="ocorrNcias-button15" class="button button-balanced  button-block">Voltar</a>
+    </ion-content>
+</ion-view>

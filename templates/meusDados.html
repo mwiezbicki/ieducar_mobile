@@ -1,0 +1,47 @@
+<ion-view title="Meus Dados" id="page8" cache-view="false">
+    <ion-content padding="true" class="has-header">
+        
+        <ion-list id="meusDados-list12">
+            <ion-item class="item-avatar" id="meusDados-list-item16">
+                <img ng-src="templates/avatar.png">
+                <h2>{{dados_responsavel.nome}}</h2>
+            </ion-item>
+        </ion-list>
+        <div class="spacer" style="width: 300px; height: 37px;"></div>
+        <div id="meusDados-markdown3" style="color:#000000;">
+            <p>
+                <strong>CPF:</strong> {{dados_responsavel.cpf}}</p>
+        </div>
+        <div id="meusDados-markdown4" style="color:#000000;">
+            <p>
+                <strong>Data Nascimento:</strong> {{dados_responsavel.data_nasc  | date:'MM/dd/yyyy' }}</p>
+        </div>
+        <div id="meusDados-markdown5" style="color:#000000;">
+            <p>
+                <strong>Endereço:</strong> {{dados_responsavel.endereco}}</p>
+        </div>
+        <div id="meusDados-markdown6" style="color:#000000;">
+            <p>
+                <strong>Bairro:</strong> {{dados_responsavel.bairro}}</p>
+        </div>
+        <div id="meusDados-markdown6" style="color:#000000;">
+            <p>
+                <strong>Cidade: </strong> {{dados_responsavel.cidade}}</p>
+        </div>
+        <div id="meusDados-markdown6" style="color:#000000;">
+            <p>
+                <strong>Telefones: </strong> {{dados_responsavel.telefones}}</p>
+        </div>
+        <div id="meusDados-markdown7" style="color:#000000;">
+            <p>
+                <strong>E-mail:</strong> {{dados_responsavel.email}}</p>
+        </div>
+        <a ui-sref="home" id="meusDados-button9" class="button button-balanced  button-block">Voltar</a>
+        
+        <div class="card assertive-bg" ng-show="dados_responsavel">
+            <div class="item item-text-wrap assertive">
+              Em caso de divergência ou dados incompletos, favor entrar em contato com o administrador da escola!
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

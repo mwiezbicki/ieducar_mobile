@@ -1,0 +1,19 @@
+<ion-view title="Notas Parciais" id="page11" cache-view="false">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="ocorrNcias-list15">
+            <ion-item class="item-avatar" id="ocorrNcias-list-item32">
+                <img ng-src="templates/avatar.png">
+                <h2>{{matricula.aluno_nome}}</h2>
+                <p><b>Escola: </b>{{matricula.escola_nome}}</p>
+                <p><b>Serie: </b>{{matricula.serie_nome}}</p>
+                <p><b>Turma: </b>{{matricula.turma_nome}}</p>
+            </ion-item>
+        </ion-list>
+        <div class="card">
+            <div class="item item-text-wrap">
+                <p><b>Dados de notas parciais ainda não estão disponíveis para consulta.</b></p>
+            </div>
+        </div>
+        <a ui-sref="detalhesDependente" id="notasParciais-button11" class="button button-balanced  button-block">Voltar</a>
+    </ion-content>
+</ion-view>

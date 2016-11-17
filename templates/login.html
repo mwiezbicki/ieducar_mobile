@@ -1,0 +1,31 @@
+<ion-view cache-view="false" title="Login" id="page5" >
+    <ion-content padding="true" class="has-header">
+        <div>
+            <img src="img/0r74LjFXSviliAqCEMYB_app_camboriu.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <div class="spacer" style="width: 300px; height: 41px;"></div>
+        <form id="login-form1" class="list" ng-submit="login(cpf,matricula_dependente)">
+            <label class="item item-input" id="login-input1">
+                <span class="input-label">CPF:</span>
+                <input type="text" placeholder="CPF do responsável" ng-model="cpf" required="required" ui-br-cpf-mask>
+            </label>
+            <label class="item item-input" id="login-matricula">
+                <span class="input-label">Código Aluno:</span>
+                <input type="number" placeholder="Código do aluno" ng-model="matricula_dependente" required>
+            </label>
+            <button ng-disabled="loading && !message_error" type="submit"  id="login-button5" class="button button-positive  button-block" >Log in</button>
+        </form>
+        
+        <div class="card" ng-show="message_error">
+            
+            <div class="item item-text-wrap assertive">
+              {{message_error}}
+            </div>
+        </div>
+        <div class="spinner"> 
+            <ion-spinner ng-show="loading && !message_error"></ion-spinner>
+        </div>
+        
+    </ion-content>
+
+</ion-view>
